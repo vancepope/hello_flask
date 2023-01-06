@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title> Vance's Tic Tac Toe Game </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/gridStyle.css') }}" />
+  </head>
+  <body>
+    <div>
+		<div class="gridContainer">
+			<div id="1" class="gridItem"></div>
+			<div id="2" class="gridItem"></div>
+			<div id="3" class="gridItem"></div>
+			<div id="4" class="gridItem"></div>
+			<div id="5" class="gridItem"></div>
+			<div id="6" class="gridItem"></div>
+			<div id="7" class="gridItem"></div>
+			<div id="8" class="gridItem"></div>
+			<div id="9" class="gridItem"></div>
+		</div>
+		<h1 id="winningHeader"  style="display: none"></h1>
+		<button id="resetButton" style="display: none">Reset</button>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="{{ url_for('static', filename='js/tictactoe.js') }}"></script>
+  </body>
+</html>
