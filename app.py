@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import os
 import psycopg2
 from datetime import datetime, timezone
-import logging
 
 load_dotenv()
 
@@ -36,7 +35,6 @@ GLOBAL_AVG = "SELECT AVG(temperature) as average FROM temperatures;"
 @app.get("/")
 def hello_monty():
     return "Hello Monty!"
-
 
 @app.post("/api/room")
 def create_room():
